@@ -21,10 +21,20 @@
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 50%;
-      min-height: auto%;
+      min-width: 100%;
+      min-height: 100%;
       object-fit: cover;
       z-index: -1;
+    }
+
+    /* Minecraft PNG overlay */
+    .minecraft-img {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      max-height: 300px;
+      z-index: 1;
+      pointer-events: none;
     }
 
     /* Navbar */
@@ -68,6 +78,8 @@
       text-align: left;
       max-width: 700px;
       text-shadow: 1px 1px 4px #000;
+      z-index: 2;
+      position: relative;
     }
 
     .content h1 {
@@ -89,16 +101,18 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- Navbar -->
-<div class="navbar">
-  <div class="title">AniCraft</div>
-  <div class="links">
-    <a href="videos.html"><strong>Episode</strong></a>
-    <a href="announcement.html" class="announce-btn">📢 View Announcements</a>
-    <a href="about.html">About</a>
-  </div>
-</div>
+  <!-- Overlay Minecraft PNG (change this image URL as needed) -->
+  <img src="https://i.imgur.com/2S9DfqX.png" alt="Minecraft character" class="minecraft-img" />
 
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="title">AniCraft</div>
+    <div class="links">
+      <a href="videos.html"><strong>Episode</strong></a>
+      <a href="announcement.html" class="announce-btn">📢 View Announcements</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <div class="content">
@@ -108,5 +122,3 @@
 
 </body>
 </html>
-
-
