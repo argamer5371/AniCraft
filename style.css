@@ -27,12 +27,15 @@ body {
 /* Navigation */
 .nav {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
-  margin: 0 15px;
   font-size: 20px;
 }
 
@@ -181,4 +184,31 @@ body {
 .details h3 {
   margin-top: 0;
   color: #00ff88;
+}
+
+/* ✅ Responsive Navbar Fix for Mobile */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .nav a {
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .bold-home {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
 }
