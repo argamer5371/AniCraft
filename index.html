@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AniCraft - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Background Video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 50%;
+      min-height: auto%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .navbar .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    .navbar .links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .navbar .links a:hover {
+      background-color: #e91e63;
+    }
+
+    /* Page Content */
+    .content {
+      padding: 140px 60px 60px;
+      color: white;
+      text-align: left;
+      max-width: 700px;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="video background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navbar -->
+<div class="navbar">
+  <div class="title">AniCraft</div>
+  <div class="links">
+    <a href="videos.html"><strong>Episode</strong></a>
+    <a href="announcement.html" class="announce-btn">📢 View Announcements</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Welcome to AniCraft</h1>
+    <p>AniCraft brings you the perfect fusion of Minecraft and anime — action, emotion, and adventure all in one! If you’re a Minecraft player who loves anime, this is your home. I’m not a professional animator, but I do my best to create the most exciting and emotional Minecraft anime series for fans like you!</p>
+  </div>
+
+</body>
+</html>
+
+
