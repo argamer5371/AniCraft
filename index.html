@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>AniCraft - Home</title>
 
-  <!-- ✅ Favicon Link -->
+  <!-- ✅ Favicon and Meta -->
   <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
   <meta property="og:title" content="AniCraft - Minecraft Anime World">
   <meta property="og:description" content="AniCraft brings Minecraft anime stories alive. Watch now!">
@@ -24,7 +24,7 @@
       font-family: Arial, sans-serif;
       background-color: black;
       color: white;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .navbar {
@@ -79,6 +79,65 @@
       font-size: 20px;
       line-height: 1.6;
     }
+
+    /* Episode Button at Bottom */
+    .episode-btn {
+      position: fixed;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 3;
+    }
+
+    .episode-btn a {
+      display: inline-block;
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 24px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .episode-btn a:hover {
+      background-color: #00ffaa;
+    }
+
+    .arrow {
+      font-size: 30px;
+      margin-top: 10px;
+      background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: bounce 1.2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        padding: 120px 20px 60px;
+      }
+
+      .content h1 {
+        font-size: 36px;
+      }
+
+      .content p {
+        font-size: 18px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -87,11 +146,7 @@
   <div class="navbar">
     <div class="title">AniCraft</div>
     <div class="links">
-     <div class="episode-btn">
-  <a href="episode.html">Episode</a>
-  <div class="arrow">&#x2193;</div>
-</div>
-      <a href="announcement.html" class="announce-btn">📢 View Announcements</a>
+      <a href="announcement.html">📢 View Announcements</a>
       <a href="about.html">About</a>
     </div>
   </div>
@@ -99,7 +154,17 @@
   <!-- Main Content -->
   <div class="content">
     <h1>Welcome to AniCraft</h1>
-    <p>AniCraft brings you the perfect fusion of Minecraft and anime — action, emotion, and adventure all in one! If you’re a Minecraft player who loves anime, this is your home. I’m not a professional animator, but I do my best to create the most exciting and emotional Minecraft anime series for fans like you!</p>
+    <p>
+      AniCraft brings you the perfect fusion of Minecraft and anime — action, emotion, and adventure all in one!
+      If you’re a Minecraft player who loves anime, this is your home. I’m not a professional animator, but I do my best
+      to create the most exciting and emotional Minecraft anime series for fans like you!
+    </p>
+  </div>
+
+  <!-- Episode Button -->
+  <div class="episode-btn">
+    <a href="episode.html">Watch Episodes</a>
+    <div class="arrow">&#x2193;</div>
   </div>
 
 </body>
