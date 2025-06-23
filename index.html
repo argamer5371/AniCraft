@@ -13,28 +13,9 @@
     html, body {
       height: 100%;
       font-family: Arial, sans-serif;
+      background-color: black; /* ✅ Black background */
+      color: white;
       overflow: hidden;
-    }
-
-    /* Background Video */
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    /* Minecraft PNG overlay */
-    .minecraft-img {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      max-height: 300px;
-      z-index: 1;
-      pointer-events: none;
     }
 
     /* Navbar */
@@ -94,18 +75,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Background Video -->
-  <video autoplay muted loop id="bg-video">
-    <source src="video background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Overlay Minecraft PNG (change this image URL as needed) -->
-  <div class="main-image">
-  <img src="maxresdefault.jpg/anicraft-cover.png" alt="AniCraft Animation Scene">
-</div>
-
 
   <!-- Navbar -->
   <div class="navbar">
